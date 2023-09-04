@@ -1,0 +1,82 @@
+{
+  "QMainWindow": [{
+    "title": "Federal Police Database App",
+    "icon": ":/icon1/icons/layers.svg",
+    "frameless": true,
+    "translucentBg": true,
+    "sizeGrip": "sizeGrip",
+    "navigation": [{
+      "minimize": "pushButton_2",
+      "close": "pushButton_4",
+      "restore": [{
+        "buttonName": "pushButton_3",
+        "normalIcon": ":/icon2/icon_white/maximize.svg",
+        "maximizedIcon": ":/icon2/icon_white/square.svg"
+      }],
+      "moveWindow": "widget",
+      "titleBar": "widget"
+    }]
+
+  }],
+  "QCustomSlideMenu": [
+    {
+      "name": "left",
+      "defaultSize": [{
+        "width": 0,
+        "height": "parent"
+      }],
+      "collapsedSize": [{
+        "width": 0,
+        "height": "parent"
+      }],
+      "expandedSize": [{
+        "width": 190,
+        "height": "parent"
+      }],
+      "toggleButton": [{
+        "buttonName": "menu_btn",
+        "icons": [{
+          "whenMenuIsCollapsed": ":/icon1/icons/menu.svg",
+          "whenMenuIsExpanded": ":/icon1/icons/chevron-left.svg"
+        }]
+      }],
+      "menuTransitionAnimation": [{
+        "animationDuration": 500,
+        "animationEasingCurve": "Linear"
+
+      }]
+    },{
+      "name": "profile",
+      "defaultSize": [{
+        "width": 0,
+        "height": "parent"
+      }],
+      "collapsedSize": [{
+        "width": 0,
+        "height": "parent"
+      }],
+      "expandedSize": [{
+        "width": 100,
+        "height": "parent"
+      }],
+      "toggleButton": [{
+        "buttonName": "account_btn"
+      }],
+      "menuTransitionAnimation": [{
+        "animationDuration": 500,
+        "animationEasingCurve": "Linear"
+      }]
+    }
+  ],
+  "QStackedWidget": [{
+    "name": "stackedWidget",
+    "navigation": [{
+      "navigationButtons": [{
+        "home_btn": "page",
+        "adimnster_btn": "page_2",
+        "language_btn": "page_3",
+        "record_btn": "page_4"
+      }]
+    }]
+  }]
+}
